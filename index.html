@@ -1,0 +1,2031 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diseño de Uñas | Belleza en cada detalle</title>
+
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff7fa;
+            color: #4b2637;
+        }
+
+
+        /* =========================
+           INICIO
+        ========================= */
+
+        #inicio {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            background: linear-gradient(
+                135deg,
+                #ffffff,
+                #ffe1ed,
+                #fff
+            );
+
+            padding: 30px;
+        }
+
+
+        .logo {
+
+            width: 430px;
+
+            max-width: 90%;
+
+            margin-bottom: 30px;
+        }
+
+
+        .boton-ingresar {
+
+            display: inline-block;
+
+            padding: 16px 65px;
+
+            background: linear-gradient(
+                135deg,
+                #c73572,
+                #ee8db2
+            );
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 40px;
+
+            font-size: 20px;
+
+            font-weight: bold;
+
+            box-shadow: 0 8px 20px
+                rgba(190, 65, 115, 0.30);
+
+            transition: 0.3s;
+        }
+
+
+        .boton-ingresar:hover {
+
+            transform: scale(1.08);
+        }
+
+
+
+        /* =========================
+           MENÚ
+        ========================= */
+
+        nav {
+
+            position: sticky;
+
+            top: 0;
+
+            z-index: 100;
+
+            background: #c73572;
+
+            padding: 18px;
+
+            text-align: center;
+
+            box-shadow: 0 3px 12px
+                rgba(0,0,0,0.15);
+        }
+
+
+        nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            margin: 0 12px;
+
+            font-size: 14px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+
+        nav a:hover {
+
+            color: #ffd9e7;
+        }
+
+
+
+        /* =========================
+           SECCIONES
+        ========================= */
+
+        section {
+
+            padding: 75px 8%;
+        }
+
+
+        .titulo {
+
+            text-align: center;
+
+            color: #c73572;
+
+            font-size: 34px;
+
+            margin-bottom: 12px;
+        }
+
+
+        .subtitulo {
+
+            text-align: center;
+
+            color: #806270;
+
+            font-size: 17px;
+
+            margin-bottom: 40px;
+        }
+
+
+        .linea {
+
+            width: 80px;
+
+            height: 4px;
+
+            background: #e878a5;
+
+            border-radius: 10px;
+
+            margin: 0 auto 30px;
+        }
+
+
+
+        /* =========================
+           DISEÑOS
+        ========================= */
+
+        #disenos {
+
+            background: white;
+        }
+
+
+        .tarjetas {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 28px;
+        }
+
+
+        .tarjeta {
+
+            width: 245px;
+
+            background: white;
+
+            padding: 28px 22px;
+
+            border-radius: 22px;
+
+            text-align: center;
+
+            border: 1px solid #f1c8d9;
+
+            box-shadow:
+                0 8px 25px
+                rgba(170,71,111,0.15);
+
+            transition: 0.3s;
+        }
+
+
+        .tarjeta:hover {
+
+            transform: translateY(-8px);
+        }
+
+
+        .icono {
+
+            width: 75px;
+
+            height: 75px;
+
+            margin: 0 auto 18px;
+
+            border-radius: 50%;
+
+            background: #ffe2ee;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            font-size: 34px;
+        }
+
+
+        .tarjeta h3 {
+
+            color: #c73572;
+
+            margin-bottom: 12px;
+
+            font-size: 21px;
+        }
+
+
+        .tarjeta p {
+
+            color: #765866;
+
+            line-height: 1.6;
+
+            font-size: 14px;
+        }
+
+
+        .precio {
+
+            margin-top: 15px;
+
+            color: #b82e68 !important;
+
+            font-weight: bold;
+
+            font-size: 18px !important;
+        }
+
+
+
+        /* =========================
+           SERVICIOS
+        ========================= */
+
+        #servicios {
+
+            background: #fff0f6;
+        }
+
+
+        .servicios {
+
+            max-width: 950px;
+
+            margin: auto;
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(210px, 1fr));
+
+            gap: 22px;
+        }
+
+
+        .servicio {
+
+            background: white;
+
+            padding: 30px;
+
+            border-radius: 20px;
+
+            text-align: center;
+
+            box-shadow:
+                0 6px 18px
+                rgba(150,60,100,0.12);
+        }
+
+
+        .servicio span {
+
+            font-size: 38px;
+        }
+
+
+        .servicio h3 {
+
+            color: #c73572;
+
+            margin: 15px 0 10px;
+        }
+
+
+        .servicio p {
+
+            color: #765866;
+
+            line-height: 1.5;
+        }
+
+
+
+        /* =========================
+           PROYECTO
+        ========================= */
+
+        #proyecto {
+
+            background: white;
+        }
+
+
+        .proyecto-contenido {
+
+            max-width: 900px;
+
+            margin: auto;
+
+            background: #fff0f6;
+
+            padding: 40px;
+
+            border-radius: 25px;
+
+            border-left: 6px solid #d54a82;
+        }
+
+
+        .proyecto-contenido h3 {
+
+            color: #c73572;
+
+            margin-bottom: 12px;
+
+            font-size: 22px;
+        }
+
+
+        .proyecto-contenido p {
+
+            line-height: 1.8;
+
+            color: #654452;
+
+            margin-bottom: 25px;
+
+            text-align: justify;
+        }
+
+
+
+        /* =========================
+           GALERÍA
+        ========================= */
+
+        #galeria {
+
+            background: #fff0f6;
+        }
+
+
+        .galeria {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+
+            max-width: 1000px;
+
+            margin: auto;
+        }
+
+
+        .foto {
+
+            height: 220px;
+
+            border-radius: 22px;
+
+            background: linear-gradient(
+                135deg,
+                #f7b4cc,
+                #fff
+            );
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            color: #a52e63;
+
+            box-shadow:
+                0 7px 18px
+                rgba(160,60,100,0.15);
+
+            transition: 0.3s;
+
+            overflow: hidden;
+
+            position: relative;
+        }
+
+
+        .foto:hover {
+
+            transform: scale(1.03);
+        }
+
+
+        /* BOTÓN PARA INSERTAR IMAGEN */
+
+        .boton-imagen {
+
+            width: 100%;
+
+            height: 100%;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            cursor: pointer;
+
+            font-weight: bold;
+        }
+
+
+        .mas {
+
+            width: 65px;
+
+            height: 65px;
+
+            border-radius: 50%;
+
+            background: white;
+
+            border: 2px dashed #c73572;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            color: #c73572;
+
+            font-size: 42px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .boton-imagen span {
+
+            color: #a52e63;
+
+            font-size: 15px;
+        }
+
+
+        .boton-imagen small {
+
+            color: #765866;
+
+            margin-top: 7px;
+
+            font-size: 12px;
+        }
+
+
+        .archivo {
+
+            display: none;
+        }
+
+
+        .imagen-galeria {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            display: none;
+        }
+
+
+        .nombre-diseno {
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 0;
+
+            right: 0;
+
+            background: rgba(255,255,255,0.90);
+
+            padding: 9px;
+
+            text-align: center;
+
+            color: #c73572;
+
+            font-weight: bold;
+
+            font-size: 14px;
+
+            z-index: 5;
+        }
+
+
+
+        /* =========================
+           RESERVAS
+        ========================= */
+
+        #reservas {
+
+            background: white;
+        }
+
+
+        .formulario {
+
+            max-width: 650px;
+
+            margin: auto;
+
+            background: #fff0f6;
+
+            padding: 40px;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 8px 25px
+                rgba(160,60,100,0.12);
+        }
+
+
+        .formulario label {
+
+            display: block;
+
+            color: #a42e61;
+
+            font-weight: bold;
+
+            margin-bottom: 7px;
+        }
+
+
+        .formulario input,
+        .formulario select,
+        .formulario textarea {
+
+            width: 100%;
+
+            padding: 14px;
+
+            margin-bottom: 20px;
+
+            border: 1px solid #e7b6c9;
+
+            border-radius: 12px;
+
+            font-family: Arial;
+
+            background: white;
+
+            outline: none;
+        }
+
+
+        .formulario textarea {
+
+            height: 110px;
+
+            resize: none;
+        }
+
+
+        .boton-reserva {
+
+            display: block;
+
+            margin: auto;
+
+            border: none;
+
+            background: #c73572;
+
+            color: white;
+
+            padding: 14px 40px;
+
+            border-radius: 30px;
+
+            font-size: 16px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+
+        .boton-reserva:hover {
+
+            background: #a9275e;
+        }
+
+
+
+        /* =========================
+           CONTACTO
+        ========================= */
+
+        #contacto {
+
+            background: #ffe2ed;
+
+            text-align: center;
+        }
+
+
+        .contactos {
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 20px;
+        }
+
+
+        .contacto {
+
+            background: white;
+
+            padding: 25px;
+
+            width: 230px;
+
+            border-radius: 20px;
+
+            box-shadow:
+                0 5px 15px
+                rgba(160,60,100,0.12);
+
+            transition: 0.3s;
+        }
+
+
+        .contacto:hover {
+
+            transform: translateY(-5px);
+        }
+
+
+        .contacto span {
+
+            font-size: 32px;
+        }
+
+
+        .contacto h3 {
+
+            color: #c73572;
+
+            margin: 10px 0;
+        }
+
+
+        .contacto p {
+
+            color: #765866;
+
+            line-height: 1.5;
+        }
+
+
+
+        /* =========================
+           FINAL
+        ========================= */
+
+        footer {
+
+            background: #b92f68;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px 20px;
+        }
+
+
+        footer h2 {
+
+            margin-bottom: 10px;
+        }
+
+
+        footer p {
+
+            margin: 7px;
+        }
+
+
+
+        /* =========================
+           CELULAR
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            nav a {
+
+                display: inline-block;
+
+                margin: 6px;
+            }
+
+
+            .titulo {
+
+                font-size: 28px;
+            }
+
+
+            .logo {
+
+                width: 350px;
+            }
+
+
+            section {
+
+                padding: 60px 5%;
+            }
+
+
+            .proyecto-contenido {
+
+                padding: 25px;
+            }
+
+
+            .galeria {
+
+                grid-template-columns: 1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 450px) {
+
+            .galeria {
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==================================================
+                         INICIO
+=================================================== -->
+
+<section id="inicio">
+<img src="https://ibb.co/NdLwrPkC"
+     alt="Logo de diseño de uñas"
+     class="logo">
+  
+    <img
+        <a href="https://ibb.co/NdLwrPkC"      
+        class="logo"
+    >
+
+
+    <a
+        href="#disenos"
+        class="boton-ingresar"
+    >
+
+        INGRESAR
+
+    </a>
+
+</section>
+
+
+
+<!-- ==================================================
+                          MENÚ
+=================================================== -->
+
+<nav>
+
+    <a href="#inicio">INICIO</a>
+
+    <a href="#disenos">DISEÑOS</a>
+
+    <a href="#servicios">SERVICIOS</a>
+
+    <a href="#proyecto">PROYECTO</a>
+
+    <a href="#galeria">GALERÍA</a>
+
+    <a href="#reservas">RESERVAS</a>
+
+    <a href="#contacto">CONTACTO</a>
+
+</nav>
+
+
+
+<!-- ==================================================
+                       DISEÑOS
+=================================================== -->
+
+<section id="disenos">
+
+    <h2 class="titulo">
+        💅 DISEÑOS DE UÑAS
+    </h2>
+
+    <div class="linea"></div>
+
+    <p class="subtitulo">
+        ✨ Belleza en cada detalle ✨
+    </p>
+
+
+    <div class="tarjetas">
+
+
+        <div class="tarjeta">
+
+            <div class="icono">
+                🌸
+            </div>
+
+            <h3>
+                Diseño Elegante
+            </h3>
+
+            <p>
+                Un diseño delicado y sofisticado
+                para cualquier ocasión.
+            </p>
+
+            <p class="precio">
+                Desde Bs. 40
+            </p>
+
+        </div>
+
+
+
+        <div class="tarjeta">
+
+            <div class="icono">
+                ✨
+            </div>
+
+            <h3>
+                Diseño Glitter
+            </h3>
+
+            <p>
+                Brillos y detalles que hacen
+                destacar tus uñas.
+            </p>
+
+            <p class="precio">
+                Desde Bs. 45
+            </p>
+
+        </div>
+
+
+
+        <div class="tarjeta">
+
+            <div class="icono">
+                💗
+            </div>
+
+            <h3>
+                Diseño Francés
+            </h3>
+
+            <p>
+                Un estilo clásico, limpio
+                y elegante.
+            </p>
+
+            <p class="precio">
+                Desde Bs. 35
+            </p>
+
+        </div>
+
+
+
+        <div class="tarjeta">
+
+            <div class="icono">
+                💎
+            </div>
+
+            <h3>
+                Personalizado
+            </h3>
+
+            <p>
+                Diseños creados de acuerdo
+                con tus gustos.
+            </p>
+
+            <p class="precio">
+                Desde Bs. 50
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+                       SERVICIOS
+=================================================== -->
+
+<section id="servicios">
+
+    <h2 class="titulo">
+        ✨ SERVICIOS
+    </h2>
+
+    <div class="linea"></div>
+
+    <p class="subtitulo">
+        Opciones para cuidar y embellecer tus uñas.
+    </p>
+
+
+    <div class="servicios">
+
+
+        <div class="servicio">
+
+            <span>💅</span>
+
+            <h3>
+                Manicure
+            </h3>
+
+            <p>
+                Cuidado, limpieza y decoración
+                de las uñas.
+            </p>
+
+        </div>
+
+
+
+        <div class="servicio">
+
+            <span>💎</span>
+
+            <h3>
+                Uñas Acrílicas
+            </h3>
+
+            <p>
+                Diseños resistentes y personalizados.
+            </p>
+
+        </div>
+
+
+
+        <div class="servicio">
+
+            <span>✨</span>
+
+            <h3>
+                Uñas en Gel
+            </h3>
+
+            <p>
+                Acabado brillante y elegante.
+            </p>
+
+        </div>
+
+
+
+        <div class="servicio">
+
+            <span>🌷</span>
+
+            <h3>
+                Decoración
+            </h3>
+
+            <p>
+                Flores, glitter, piedras y
+                diferentes detalles.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+                        PROYECTO
+=================================================== -->
+
+<section id="proyecto">
+
+    <h2 class="titulo">
+        🌷 SOBRE EL PROYECTO
+    </h2>
+
+    <div class="linea"></div>
+
+
+    <div class="proyecto-contenido">
+
+
+        <h3>
+            ¿En qué consiste?
+        </h3>
+
+        <p>
+            Este proyecto consiste en la implementación
+            de un centro de nail art personalizado con
+            herramientas digitales para mejorar la
+            experiencia del cliente.
+        </p>
+
+
+        <h3>
+            🎯 Objetivo general
+        </h3>
+
+        <p>
+            Implementar un espacio de nail art personalizado
+            utilizando herramientas digitales que permitan
+            presentar diferentes diseños y mejorar la
+            atención y experiencia del cliente.
+        </p>
+
+
+        <h3>
+            💡 Innovación
+        </h3>
+
+        <p>
+            La innovación consiste en utilizar una página
+            web como herramienta digital para mostrar los
+            diseños, servicios y opciones disponibles,
+            facilitando al cliente la elección de su diseño.
+        </p>
+
+
+        <h3>
+            💗 Importancia
+        </h3>
+
+        <p>
+            El uso de herramientas digitales permite
+            presentar la información de una manera más
+            organizada, atractiva y accesible.
+        </p>
+
+
+    </div>
+
+</section>
+
+<!-- =========================
+     GALERÍA
+========================= -->
+
+<section id="galeria">
+
+    <h2>📸 GALERÍA</h2>
+
+    <p class="texto-galeria">
+        💅 Conoce algunos de nuestros diseños de uñas 💅
+    </p>
+
+    <div class="galeria">
+
+
+        <!-- =========================
+             CUADRO 1
+        ========================= -->
+
+        <div class="foto">
+
+            <div class="zona-imagen">
+
+                <img
+                    id="img1"
+                    class="imagen"
+                    src="diseño1.jpg"
+                    alt="Diseño de uñas">
+
+            </div>
+
+
+            <div class="controles">
+
+                <button
+                    type="button"
+                    onclick="cambiar(1,-1)">
+                    ◀
+                </button>
+
+
+                <button
+                    class="boton-agregar"
+                    type="button"
+                    onclick="document.getElementById('archivo1').click()">
+                    +
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="cambiar(1,1)">
+                    ▶
+                </button>
+
+            </div>
+
+
+            <p>🌸 Diseño Floral</p>
+
+
+            <input
+                id="archivo1"
+                type="file"
+                accept="image/*"
+                multiple
+                hidden
+                onchange="agregarImagenes(this,1)">
+
+        </div>
+
+
+
+        <!-- =========================
+             CUADRO 2
+        ========================= -->
+
+        <div class="foto">
+
+            <div class="zona-imagen">
+
+                <img
+                    id="img2"
+                    class="imagen"
+                    src="diseño2.jpg"
+                    alt="Diseño de uñas">
+
+            </div>
+
+
+            <div class="controles">
+
+                <button
+                    type="button"
+                    onclick="cambiar(2,-1)">
+                    ◀
+                </button>
+
+
+                <button
+                    class="boton-agregar"
+                    type="button"
+                    onclick="document.getElementById('archivo2').click()">
+                    +
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="cambiar(2,1)">
+                    ▶
+                </button>
+
+            </div>
+
+
+            <p>✨ Diseño Glitter</p>
+
+
+            <input
+                id="archivo2"
+                type="file"
+                accept="image/*"
+                multiple
+                hidden
+                onchange="agregarImagenes(this,2)">
+
+        </div>
+
+
+
+        <!-- =========================
+             CUADRO 3
+        ========================= -->
+
+        <div class="foto">
+
+            <div class="zona-imagen">
+
+                <img
+                    id="img3"
+                    class="imagen"
+                    src="diseño3.jpg"
+                    alt="Diseño de uñas">
+
+            </div>
+
+
+            <div class="controles">
+
+                <button
+                    type="button"
+                    onclick="cambiar(3,-1)">
+                    ◀
+                </button>
+
+
+                <button
+                    class="boton-agregar"
+                    type="button"
+                    onclick="document.getElementById('archivo3').click()">
+                    +
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="cambiar(3,1)">
+                    ▶
+                </button>
+
+            </div>
+
+
+            <p>💗 Diseño Francés</p>
+
+
+            <input
+                id="archivo3"
+                type="file"
+                accept="image/*"
+                multiple
+                hidden
+                onchange="agregarImagenes(this,3)">
+
+        </div>
+
+
+
+        <!-- =========================
+             CUADRO 4
+        ========================= -->
+
+        <div class="foto">
+
+            <div class="zona-imagen">
+
+                <img
+                    id="img4"
+                    class="imagen"
+                    src="diseño4.jpg"
+                    alt="Diseño de uñas">
+
+            </div>
+
+
+            <div class="controles">
+
+                <button
+                    type="button"
+                    onclick="cambiar(4,-1)">
+                    ◀
+                </button>
+
+
+                <button
+                    class="boton-agregar"
+                    type="button"
+                    onclick="document.getElementById('archivo4').click()">
+                    +
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="cambiar(4,1)">
+                    ▶
+                </button>
+
+            </div>
+
+
+            <p>💖 Diseño Elegante</p>
+
+
+            <input
+                id="archivo4"
+                type="file"
+                accept="image/*"
+                multiple
+                hidden
+                onchange="agregarImagenes(this,4)">
+
+        </div>
+
+
+
+        <!-- =========================
+             CUADRO 5
+        ========================= -->
+
+        <div class="foto">
+
+            <div class="zona-imagen">
+
+                <img
+                    id="img5"
+                    class="imagen"
+                    src="diseño5.jpg"
+                    alt="Diseño de uñas">
+
+            </div>
+
+
+            <div class="controles">
+
+                <button
+                    type="button"
+                    onclick="cambiar(5,-1)">
+                    ◀
+                </button>
+
+
+                <button
+                    class="boton-agregar"
+                    type="button"
+                    onclick="document.getElementById('archivo5').click()">
+                    +
+                </button>
+
+
+                <button
+                    type="button"
+                    onclick="cambiar(5,1)">
+                    ▶
+                </button>
+
+            </div>
+
+
+            <p>🎀 Diseño Personalizado</p>
+
+
+            <input
+                id="archivo5"
+                type="file"
+                accept="image/*"
+                multiple
+                hidden
+                onchange="agregarImagenes(this,5)">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CSS DE GALERÍA
+========================= -->
+
+<style>
+
+#galeria {
+    padding: 50px 20px;
+}
+
+#galeria h2 {
+    text-align: center;
+    color: #c94f82;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.texto-galeria {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    justify-content: center;
+    gap: 25px;
+}
+
+.foto {
+    width: 300px;
+    background: white;
+    border: 2px solid #edb0ca;
+    border-radius: 20px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px #f0d5e1;
+}
+
+.zona-imagen {
+    width: 100%;
+    height: 190px;
+    background: #fff0f6;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.imagen {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.controles button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    background: #e889ae;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.controles button:hover {
+    background: #c94f82;
+}
+
+.controles .boton-agregar {
+    font-size: 24px;
+    background: #c94f82;
+}
+
+.foto p {
+    color: #c94f82;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* =========================
+   RESERVAS
+========================= */
+
+#reservas {
+    padding: 60px 20px;
+}
+
+#reservas h2 {
+    text-align: center;
+    color: #c94f82;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.formulario {
+    width: 90%;
+    max-width: 550px;
+    margin: auto;
+    background: white;
+    border: 2px solid #edb0ca;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: 0 5px 15px #f2d5e1;
+}
+
+.formulario label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    color: #b94b7b;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #dfb3c8;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.formulario textarea {
+    height: 110px;
+    resize: none;
+}
+
+.boton-reserva {
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #c94f82;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+#contacto {
+    padding: 60px 20px;
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #c94f82;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 700px) {
+
+    .galeria {
+        grid-template-columns: 300px;
+    }
+
+}
+
+</style>
+
+
+
+<!-- =========================
+     RESERVAS
+========================= -->
+
+<section id="reservas">
+
+    <h2>📅 RESERVAS</h2>
+
+    <form
+        class="formulario"
+        onsubmit="hacerReserva(event)">
+
+        <label>Nombre:</label>
+
+        <input
+            type="text"
+            placeholder="Escribe tu nombre"
+            required>
+
+
+        <label>Teléfono:</label>
+
+        <input
+            type="tel"
+            placeholder="Escribe tu teléfono"
+            required>
+
+
+        <label>Fecha:</label>
+
+        <input
+            type="date"
+            required>
+
+
+        <label>Hora:</label>
+
+        <input
+            type="time"
+            required>
+
+
+        <label>Servicio:</label>
+
+        <select required>
+
+            <option value="">
+                Selecciona un servicio
+            </option>
+
+            <option>Manicure</option>
+
+            <option>Uñas Acrílicas</option>
+
+            <option>Uñas en Gel</option>
+
+            <option>Decoración</option>
+
+        </select>
+
+
+        <label>¿Qué diseño deseas?</label>
+
+        <textarea
+            placeholder="Describe el diseño que deseas">
+        </textarea>
+
+
+        <button
+            class="boton-reserva"
+            type="submit">
+
+            💅 RESERVAR CITA
+
+        </button>
+
+    </form>
+
+</section>
+
+
+
+<!-- =========================
+     CONTACTO
+========================= -->
+
+<section id="contacto">
+
+    <h2>📞 CONTACTO</h2>
+
+
+    <div class="contactos">
+
+
+        <div class="contacto">
+
+            <h3>📱 Teléfono</h3>
+
+            <p>70000000</p>
+
+        </div>
+
+
+        <div class="contacto">
+
+            <h3>📧 Correo</h3>
+
+            <p>
+                bellezaencadadetalle@gmail.com
+            </p>
+
+        </div>
+
+
+        <div class="contacto">
+
+            <h3>📍 Ubicación</h3>
+
+            <p>
+                Chuquisaca - Bolivia
+            </p>
+
+        </div>
+
+
+        <div class="contacto">
+
+            <h3>💬 WhatsApp</h3>
+
+            <p>
+                Escríbenos para realizar
+                consultas y reservas.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<footer>
+
+    <h3>
+        💅 BELLEZA EN CADA DETALLE
+    </h3>
+
+    <p>
+        Proyecto de Innovación - Diseño de Uñas
+    </p>
+
+    <p>
+        ✨ Gracias por visitar nuestra página 6toA ✨
+    </p>
+
+</footer>
+
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+/* =========================
+   IMÁGENES DE LA GALERÍA
+========================= */
+
+let fotos = [
+
+    [],
+
+    ["diseño1.jpg"],
+
+    ["diseño2.jpg"],
+
+    ["diseño3.jpg"],
+
+    ["diseño4.jpg"],
+
+    ["diseño5.jpg"]
+
+];
+
+
+let posicion = [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+];
+
+
+
+/* =========================
+   AGREGAR MÁS IMÁGENES
+========================= */
+
+function agregarImagenes(input, numero) {
+
+    let archivos = input.files;
+
+    for (let i = 0; i < archivos.length; i++) {
+
+        let lector = new FileReader();
+
+        lector.onload = function(event) {
+
+            fotos[numero].push(
+                event.target.result
+            );
+
+        };
+
+        lector.readAsDataURL(archivos[i]);
+
+    }
+
+}
+
+
+
+/* =========================
+   CAMBIAR IMAGEN
+========================= */
+
+function cambiar(numero, direccion) {
+
+    if (fotos[numero].length === 0) {
+
+        return;
+
+    }
+
+
+    posicion[numero] += direccion;
+
+
+    if (
+        posicion[numero] >=
+        fotos[numero].length
+    ) {
+
+        posicion[numero] = 0;
+
+    }
+
+
+    if (posicion[numero] < 0) {
+
+        posicion[numero] =
+            fotos[numero].length - 1;
+
+    }
+
+
+    let imagen =
+        document.getElementById(
+            "img" + numero
+        );
+
+
+    imagen.src =
+        fotos[numero][
+            posicion[numero]
+        ];
+
+}
+
+
+
+/* =========================
+   RESERVA
+========================= */
+
+function hacerReserva(event) {
+
+    event.preventDefault();
+
+    alert(
+        "💗 ¡Tu reserva fue registrada correctamente!"
+    );
+
+}
+
+
+
+/* =========================
+   MOSTRAR IMAGEN NUEVA
+========================= */
+
+document.addEventListener(
+    "change",
+    function(event) {
+
+        if (
+            event.target.type === "file"
+        ) {
+
+            let numero =
+                event.target.id.replace(
+                    "archivo",
+                    ""
+                );
+
+            setTimeout(
+                function() {
+
+                    if (
+                        fotos[numero].length > 1
+                    ) {
+
+                        posicion[numero] =
+                            fotos[numero].length - 1;
+
+                        let imagen =
+                            document.getElementById(
+                                "img" + numero
+                            );
+
+                        imagen.src =
+                            fotos[numero][
+                                posicion[numero]
+                            ];
+
+                    }
+
+                },
+                200
+            );
+
+        }
+
+    }
+);
+
+</script>
